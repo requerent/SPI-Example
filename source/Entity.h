@@ -17,6 +17,8 @@ public:
 
 	static const int s_MaxEntities;
 
+	e_Type getType() const { return m_type; }
+
 protected:
 
 	static unsigned s_Events;
@@ -33,7 +35,7 @@ protected:
 	int m_w, m_h;
 	std::string m_AssetName;
 	
-	e_Type getType() const { return m_type; }
+
 
 	virtual void onEvent(unsigned e)		{}
 	virtual void onUpdate(float dt)			{}
